@@ -64,4 +64,33 @@
   .item-button:hover {
     background-color: #4682b4;
   }
+
+  /* Media Query for small screens */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+      padding: 10px;
+  }
+
+  .nav-bar {
+      flex-direction: column; /* Stack nav buttons vertically */
+      align-items: center;
+  }
+
+  .nav-button {
+      margin-bottom: 10px; /* Space between buttons */
+      width: 100%; /* Full width */
+  }
+
+  .item-grid {
+      flex-direction: column; /* Stack item buttons vertically */
+      align-items: center;
+  }
+
+  .item-button {
+      width: 80%; /* Reduce item button width */
+      margin-bottom: 10px; /* Space between item buttons */
+      padding: 30px; /* Adjust padding for smaller screens */
+  }
+}
   

@@ -68,4 +68,21 @@
   button:hover {
     background-color: #4682b4;
   }
+
+  /* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;  /* Increase width for better spacing on small screens */
+      padding: 20px;  /* Reduce padding */
+  }
+
+  .form-group {
+      flex-direction: column;  /* Stack the form fields vertically */
+      gap: 10px;  /* Reduce gap between fields */
+  }
+
+  input, select {
+      width: 100%;  /* Full width for inputs and selects */
+  }
+}
   

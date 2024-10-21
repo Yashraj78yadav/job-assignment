@@ -111,3 +111,57 @@ body {
     border: none;
     cursor: pointer;
 }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: center; /* Center align header items */
+    }
+
+    .nav-button {
+        width: 100%; /* Full width for buttons on small screens */
+        margin: 5px 0; /* Vertical margin */
+    }
+
+    .cart-row {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .cart-column {
+        width: 90%; /* Adjusted width for smaller screens */
+        margin: 5px 0; /* Vertical margin for columns */
+    }
+
+    .grand-total {
+        flex-direction: column; /* Stack grand total items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .delete-button {
+        width: 100%; /* Full width for delete button */
+        margin-top: 10px; /* Margin for spacing */
+    }
+
+    .checkout-button {
+        width: 100%; /* Full width for checkout button */
+        margin-top: 10px; /* Margin for spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-column {
+        width: 100%; /* Full width for all columns on very small screens */
+        margin: 5px 0; /* Margin for vertical spacing */
+    }
+
+    .nav-button {
+        font-size: 14px; /* Smaller font for buttons */
+    }
+
+    .quantity-dropdown {
+        width: 100%; /* Full width for dropdowns */
+    }
+}

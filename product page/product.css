@@ -80,3 +80,54 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vendor-name {
+        margin-bottom: 10px;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 80%; /* Make cards take full width on smaller screens */
+        margin-bottom: 15px; /* Space between cards */
+    }
+
+    .nav-button,
+    .tab {
+        width: 100%; /* Full width for buttons on smaller screens */
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        padding: 15px; /* Smaller padding on product cards */
+    }
+
+    .shop-button {
+        padding: 8px 10px; /* Adjust button padding for smaller screens */
+    }
+
+    .nav-button {
+        padding: 8px; /* Adjust button padding for smaller screens */
+    }
+
+    .tab {
+        padding: 8px; /* Adjust tab padding for smaller screens */
+    }
+}

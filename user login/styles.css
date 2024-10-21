@@ -82,3 +82,41 @@ button {
 button:hover {
     opacity: 0.8;
 }
+
+/* Media Query for Responsive Design */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%; /* Use a percentage for width to fit small screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 18px; /* Slightly smaller font size for the heading */
+    }
+
+    .input-container {
+        flex-direction: column; /* Stack label and input vertically */
+        align-items: stretch; /* Stretch to fill the container */
+    }
+
+    label {
+        width: 100%; /* Full width for labels */
+        text-align: left; /* Align text to the left */
+        margin-bottom: 5px; /* Space between label and input */
+    }
+
+    input {
+        width: 100%; /* Full width for inputs */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: stretch; /* Stretch buttons to fill the container */
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    button {
+        width: 100%; /* Full width for buttons */
+        margin-bottom: 10px; /* Space between buttons */
+    }
+}

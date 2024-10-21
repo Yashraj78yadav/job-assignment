@@ -70,3 +70,42 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .tabs {
+        justify-content: center;
+    }
+
+    .vendors {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .vendor-card {
+        width: 90%; /* Make vendor cards take more space */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-button, .tab, .shop-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .vendor-card {
+        width: 100%; /* Full width on very small screens */
+    }
+}

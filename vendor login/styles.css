@@ -101,3 +101,68 @@ button:hover {
 .chart-btn:hover, .back-btn:hover {
     opacity: 0.8;
 }
+
+
+/* Media query for small screens (tablets, mobile devices) */
+@media (max-width: 768px) {
+    .login-container {
+        width: 70%; /* Adjust the width for smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    h2 {
+        font-size: 18px; /* Slightly smaller font size */
+    }
+
+    label {
+        width: 35%; /* Adjust label width */
+        font-size: 14px; /* Reduce label font size */
+    }
+
+    input {
+        width: 60%; /* Adjust input width */
+        font-size: 14px; /* Smaller font for input fields */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add space between buttons */
+    }
+
+    button {
+        width: 100%; /* Make buttons take full width */
+    }
+}
+
+/* Media query for extra small screens (mobile devices) */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%; /* Almost full width on mobile */
+    }
+
+    label, input {
+        width: 100%; /* Stack label and input */
+        text-align: left; /* Align text to left for better readability */
+    }
+
+    label {
+        margin-bottom: 10px; /* Add margin between label and input */
+    }
+
+    .input-container {
+        flex-direction: column; /* Stack label and input vertically */
+        align-items: flex-start;
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    button {
+        width: 100%; /* Full-width buttons */
+    }
+
+    h2 {
+        font-size: 16px; /* Smaller heading */
+    }
+}

@@ -95,3 +95,38 @@ nav {
     color: black;
     text-align: center;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Increase width on smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .status-box {
+        width: 100%; /* Full width on small screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .status-option {
+        flex-direction: column; /* Stack options vertically */
+        align-items: flex-start; /* Align options to the start */
+    }
+
+    .status-option label {
+        width: 100%; /* Make labels full width */
+        text-align: center; /* Center align text */
+        margin-top: 5px; /* Add spacing between options */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-button, .update-btn {
+        width: 100%; /* Full width buttons on very small screens */
+        margin-top: 10px; /* Space between buttons */
+    }
+
+    #status-message {
+        font-size: 16px; /* Slightly smaller font size */
+    }
+}

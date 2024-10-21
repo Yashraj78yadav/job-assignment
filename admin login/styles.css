@@ -89,3 +89,47 @@ button:hover {
     text-decoration: underline;
     font-size: 16px;
 }
+
+
+/* Media Query  */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%; 
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px; 
+        padding: 8px;
+    }
+
+    .input-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    label {
+        width: 100%; 
+        text-align: left; 
+        margin-bottom: 5px; 
+    }
+
+    input {
+        width: 100%; 
+    }
+
+    .button-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    button {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    button:last-child {
+        margin-bottom: 0; 
+    }
+}
+

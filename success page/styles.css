@@ -72,4 +72,22 @@
   .continue-button:hover {
     background-color: #4682b4;
   }
+
+  /* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .popup {
+      width: 80%; /* Increase width for smaller screens */
+      padding: 20px; /* Reduce padding */
+  }
+
+  button {
+      width: 100%; /* Full width for buttons on smaller screens */
+      margin-bottom: 10px; /* Space between buttons */
+  }
+
+  .form-group {
+      flex-direction: column; /* Stack items vertically */
+      align-items: stretch; /* Align items to stretch full width */
+  }
+}
   

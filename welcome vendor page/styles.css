@@ -54,3 +54,36 @@ body {
 .action-btn:hover {
     background-color: #a9a9a9;
 }
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .dashboard-container {
+        width: 80%; /* Increase width to 80% on smaller screens */
+        height: auto; /* Allow height to adjust automatically */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .header h2 {
+        font-size: 16px; /* Decrease font size */
+    }
+
+    .action-btn {
+        width: 100%; /* Make buttons full-width */
+        margin: 5px 0; /* Add margin for spacing between buttons */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .header h2 {
+        font-size: 14px; /* Further decrease font size for very small screens */
+    }
+
+    .action-btn {
+        font-size: 12px; /* Decrease button text size */
+    }
+}

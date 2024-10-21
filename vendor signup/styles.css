@@ -82,3 +82,34 @@ button {
 button:hover {
     opacity: 0.8;
 }
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .signup-container {
+        width: 80%; /* Adjust the width for smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    h2 {
+        font-size: 18px; /* Decrease font size */
+    }
+
+    .input-container {
+        flex-direction: column; /* Stack input and label vertically */
+        align-items: flex-start; /* Align labels to the left */
+    }
+
+    label {
+        width: 100%; /* Labels take full width */
+        text-align: left; /* Align text to the left */
+        margin-bottom: 5px; /* Add space below labels */
+    }
+
+    input, select {
+        width: 100%; /* Inputs and selects take full width */
+    }
+
+    button {
+        width: 100%; /* Button takes full width */
+    }
+}

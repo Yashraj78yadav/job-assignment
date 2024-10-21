@@ -108,3 +108,35 @@ body {
     width: 120px;
     align-self: center;
 }
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Increase width for better spacing */
+        margin: 20px auto; /* Reduce margin */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .header {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+    }
+
+    .content {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .sidebar {
+        padding: 15px; /* Adjust padding */
+    }
+
+    .section-title {
+        font-size: 18px; /* Slightly larger text for better readability */
+    }
+
+    .action {
+        width: 100%; /* Full width for buttons */
+        padding: 12px; /* Adjust padding */
+        font-size: 16px; /* Larger text for better touch targets */
+    }
+}

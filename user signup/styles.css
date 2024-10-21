@@ -88,3 +88,40 @@ body {
 .submit-btn:hover {
     background-color: #4169E1;
 }
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header h2 {
+        margin: 10px 0;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .input-group input {
+        width: 100%;
+    }
+
+    .btn, .submit-btn {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+    }
+}
