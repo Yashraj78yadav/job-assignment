@@ -24,3 +24,13 @@ document.getElementById('product-btn').addEventListener('click', function() {
     // alert('Redirecting to User Login');
     window.location.href = '../product page/index.html'; // Example of redirect
 });
+// redirecting to product page
+document.getElementById('productbtn').addEventListener('click', function() {
+    // alert('Redirecting to User Login');
+    window.location.href = '../product status page/index.html'; // Example of redirect
+});
+// redirecting to product page
+document.getElementById('request-btn').addEventListener('click', function() {
+    // alert('Redirecting to User Login');
+    window.location.href = '../request item page/index.html'; // Example of redirect
+});
