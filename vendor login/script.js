@@ -1,14 +1,19 @@
+// Login functionality
 document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     const userId = document.getElementById('userId').value;
     const password = document.getElementById('password').value;
-    
-    if (userId ==='vendor' && password ==='123') {
+
+    // Get stored credentials from localStorage
+    const storedUserId = localStorage.getItem('userId');
+    const storedPassword = localStorage.getItem('password');
+
+    if (userId === storedUserId && password === storedPassword) {
         alert('Login Successful!');
-        window.location.href = '../welcome vendor page/index.html';
+        window.location.href = '../welcome vendor page/index.html'; // Redirect to vendor  portal
     } else {
-        alert('User Id and Password is not correct');
+        alert('Invalid login credentials. Please try again.');
     }
 });
 
